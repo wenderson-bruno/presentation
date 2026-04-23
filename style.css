@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Roboto", sans-serif;
     background: linear-gradient(to bottom, #1d1b2c);
     color: #fff;
@@ -16,7 +17,8 @@ body{
     justify-content: space-between;
     margin-top: 20px;
 }
-h2 span{
+
+h2 span {
     opacity: 0.8;
 }
 
@@ -28,13 +30,15 @@ h2 span{
     display: flex;
     margin-right: 20px;
 }
+
 li a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     transition: transform 0.3s ease;
 }
-.ul-container li a:hover{
+
+.ul-container li a:hover {
     transform: scale(1.1);
     opacity: 0.7;
 }
@@ -79,21 +83,23 @@ li {
     flex-direction: column;
     gap: 10px;
 }
-.imgs-icons-contact a{
+
+.imgs-icons-contact a {
     color: #fff;
 }
-.imgs-icons-contact a:hover{
+
+.imgs-icons-contact a:hover {
     opacity: 0.8;
 }
 
 .button-contact {
-    width: 110px;
+    width: 120px;
     padding: 5px 5px;
     border-radius: 5px;
     background-color: #6D54E1;
 }
 
-.button-contact a{
+.button-contact a {
     text-decoration: none;
     color: #fff;
 }
@@ -105,7 +111,7 @@ li {
 
 
 /* SKILLS */
-#skills{
+#skills {
     display: flex;
     justify-content: end;
     position: absolute;
@@ -115,13 +121,14 @@ li {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-#skills.show{
+
+#skills.show {
     opacity: 1;
     pointer-events: auto;
 }
 
 
-.container-de-skills{
+.container-de-skills {
     display: flex;
     flex-direction: column;
     background-color: #6D54E1;
@@ -130,17 +137,67 @@ li {
     height: 300px;
     box-shadow: 1px 1px 5px #000;
 }
-.container-de-skills h3{
+
+.container-de-skills h3 {
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
-.container-img-skills{
+
+.container-img-skills {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     margin-top: 15px;
 }
-.container-img-skills img{
+
+.container-img-skills img {
     width: 50px;
+}
+
+
+/* CONTACTS */
+#contacts-id {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    pointer-events: none;
+    top: 100px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#contacts-id.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container-contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: #6D54E1;
+    width: 200px;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.container-contacts h3 {
+    text-align: center;
+    text-shadow: 1px 1px 0.5px #000;
+}
+
+.container-img-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.container-img-contacts img {
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
